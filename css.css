@@ -1272,15 +1272,15 @@ li.for_content_li:hover .for_content_off {
 
 /* Manager Colour */
 #chat .chat-container .chat-messages .chat-main li.manager .user-role, #chat .chat-container .chat-messages .chat-main li.manager .username, #chat .chat-container .chat-messages .chat-main li.manager span.user-role-icon {
-    color:#e74c3c;
+    color:#EA2027;
 }
 
 #main_avatar_room #main-user-list-room #avatar-list li.manager .user-role, #main_avatar_room #main-user-list-room #avatar-list li.manager .username, #main_avatar_room #main-user-list-room #avatar-list li.manager span.user-role-icon{
-    color:#e74c3c;
+    color:#EA2027;
 }
 
 #player-controller .left ul li.infoContainer .infoContainerInner .currentDJSong.manager .user-role, #player-controller .left ul li.infoContainer .infoContainerInner .currentDJSong.manager .username, #player-controller .left ul li.infoContainer .infoContainerInner .currentDJSong.manager span.user-role-icon {
-    color:#e74c3c;
+    color:#EA2027;
 }
 
 /* Mod Colour */
