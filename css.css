@@ -1273,10 +1273,12 @@ li.for_content_li:hover .for_content_off {
 /* Manager Colour */
 #chat .chat-container .chat-messages .chat-main li.manager .user-role, #chat .chat-container .chat-messages .chat-main li.manager .username, #chat .chat-container .chat-messages .chat-main li.manager span.user-role-icon {
     color:#EA2027;
+    font-weight:1000;
 }
 
 #main_avatar_room #main-user-list-room #avatar-list li.manager .user-role, #main_avatar_room #main-user-list-room #avatar-list li.manager .username, #main_avatar_room #main-user-list-room #avatar-list li.manager span.user-role-icon{
     color:#EA2027;
+    
 }
 
 #player-controller .left ul li.infoContainer .infoContainerInner .currentDJSong.manager .user-role, #player-controller .left ul li.infoContainer .infoContainerInner .currentDJSong.manager .username, #player-controller .left ul li.infoContainer .infoContainerInner .currentDJSong.manager span.user-role-icon {
@@ -1312,6 +1314,7 @@ li.for_content_li:hover .for_content_off {
 /* Admin Colours */
 #chat .chat-container .chat-messages .chat-main li.admin .user-role, #chat .chat-container .chat-messages .chat-main li.admin .username, #chat .chat-container .chat-messages .chat-main li.admin span.user-role-icon{
     color:#e74c3c;
+    font-weight:1000;
 }
 
 #main_avatar_room #main-user-list-room #avatar-list li.admin .user-role, #main_avatar_room #main-user-list-room #avatar-list li.admin .username {
@@ -1320,6 +1323,8 @@ li.for_content_li:hover .for_content_off {
 
 #player-controller .left ul li.infoContainer .infoContainerInner .currentDJSong.admin .user-role, #player-controller .left ul li.infoContainer .infoContainerInner .currentDJSong.admin .username, #player-controller .left ul li.infoContainer .infoContainerInner .currentDJSong.admin span.user-role-icon {
     color:#e74c3c;
+}
+
 
 /* Res-DJ Colour
 #chat .chat-container .chat-messages .chat-main li.resident-dj .user-role, #chat .chat-container .chat-messages .chat-main li.resident-dj .username, #chat .chat-container .chat-messages .chat-main li.resident-dj span.user-role-icon{
@@ -1333,9 +1338,8 @@ li.for_content_li:hover .for_content_off {
 #player-controller .left ul li.infoContainer .infoContainerInner .currentDJSong.resident-dj .user-role, #player-controller .left ul li.infoContainer .infoContainerInner .currentDJSong.resident-dj .username, #player-controller .left ul li.infoContainer .infoContainerInner .currentDJSong.resident-dj span.user-role-icon {
     color:#44bd32;
 }
- */
+*/
 
-/* hosted by colour */
-#room-info-display .room-info-display-wrapper .header span i {
-    color:#e74c3c;
+#chat .chat-container .image_row img {
+    border-radius:50%;
 }
