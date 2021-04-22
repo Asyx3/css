@@ -1365,14 +1365,12 @@ li.for_content_li:hover .for_content_off {
     color:#f7b731;
 }
 
-/*
 #chat .chat-container .chat-messages .chat-main li.vip .username:before {
-    content: url(https://cdn.betterttv.net/emote/5b444de56b9160327d12534a/1x.gif);
+    content: url(https://raw.githubusercontent.com/Asyx3/css/main/vip.png);
     position: relative;
     top: 3px;
     padding-right: 4px;
 }
-*/
 
 #main_avatar_room #main-user-list-room #avatar-list li.vip .user-role, #main_avatar_room #main-user-list-room #avatar-list li.vip .username, #main_avatar_room #main-user-list-room #avatar-list li.vip span.user-role-icon {
     color:#f7b731;
