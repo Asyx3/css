@@ -1459,6 +1459,7 @@ li.for_content_li:hover .for_content_off {
 #main_avatar_room #main-user-list-room #avatar-list li.userid-607d4a6d520719000609c7f9 .user-role, .chat-main li.user-607d4a6d520719000609c7f9 .activity-row .username .user-role {
     visibility: hidden;
 }
+/*
 #main_avatar_room #main-user-list-room #avatar-list li.userid-607d4a6d520719000609c7f9 .user-role::after {
     content: "bot";
     visibility: visible;
@@ -1466,6 +1467,7 @@ li.for_content_li:hover .for_content_off {
     right:390px;
     color:#99d5ff;
 }
+*/
 
 .chat-main li.user-607d4a6d520719000609c7f9 .activity-row .username .user-role::after {
     content: "bot";
