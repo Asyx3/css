@@ -1420,3 +1420,6 @@ a, body, button, input, select, textarea{
     color: #FF4060;
 }
 
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .browserPlaylistItems.display-mod-controls .room-queue-item .actions .remove_dj{
+    color: #FF4060;
+}
