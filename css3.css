@@ -1,0 +1,1483 @@
+/*
+
+    Custom CSS for Dubtrack.fm
+    Blue theme and UI improvements
+    Made by @Kris
+    https://www.dubtrack.fm/kris
+    https://github.com/PossiblyKris
+
+    Copyright 2015 Kris (@PossiblyKris)
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+*/
+
+
+/* Body */
+a:active, a:focus, a:hover {
+    color: #fff;
+}
+a, body, button, input, select, textarea{
+    font-family: 'Arial', sans-serif;
+    color: #ccc;
+}
+#header-global .header-left-navigation a.room-active-link.active-room .icon-chevron {
+    color: #5A93CC;
+}
+#warning {
+    background: #935ACC;
+    color: #222229;
+}
+
+/* Main page */
+#main-loading {
+    opacity: 1;
+    background: rgba(50,50,50,1);
+    color: #eee;
+    border-radius: 1rem;
+}
+
+/* Mobile menu */
+#mobile-room-menu {
+    background: rgba(15,15,15,0.66);
+}
+#mobile-room-menu a {
+    font-size: .85rem;
+    font-weight: 700;
+    border-right: none;
+}
+
+/* Top bar */
+#header-global {
+    /*background: linear-gradient(to bottom, rgba(20,20,20,0.66) 0%, rgba(20,20,20,0.66) 90%, rgba(20,20,20,0) 100%);*/
+    background: rgba(15,15,15,0.66);
+}
+#header-global .header-right-navigation .user-info span:hover,
+#header-global .header-right-navigation .user-messages:hover,
+#header-global .header-right-navigation .for:hover {
+    color: #fff;
+}
+#header-global .header-right-navigation .user-messages .message-counter {
+    background: #CC5A93;
+}
+#header-global .header-right-navigation .user-messages .message-counter {
+    color: #fff;
+}
+/* Dunno what this does
+#header-global .header-left-navigation h1 {
+    width: 32px !important;
+    width: 2rem;
+    height: 32px !important;
+    height: 2rem;
+    background-image: url(https://raw.githubusercontent.com/Asyx3/css/main/owner.png) !important;
+    background-size: 2rem 2rem;
+}
+*/
+
+/* Bottom bar */
+/*@media screen and (min-width: 72em) {}*/
+#player-controller {
+    /*background: linear-gradient(to top, rgba(20,20,20,0.5) 0%, rgba(20,20,20,0.25) 60%, rgba(20,20,20,0) 100%);*/
+    background: rgba(15,15,15,0.42);
+}
+#player-controller .left {
+    /*background: linear-gradient(to top, rgba(20,20,20,0.5) 0%, rgba(20,20,20,0.30) 60%, rgba(20,20,20,0) 100%);*/
+    background: rgba(15,15,15,0.42);
+}
+#player-controller .right {
+    background: rgba(0,0,0,0);
+}
+#player-controller .left ul li.imgEl {
+    cursor: pointer;
+}
+#player-controller .imgEl img {
+    margin: 5px;
+}
+#player-controller .left ul li.infoContainer .infoContainerInner {
+    padding: .5rem 5rem .5rem 1rem;
+}
+#player-controller .left ul li.infoContainer .infoContainerInner .currentDJSong {
+    color: #888;
+    font-size: .95rem;
+}
+#player-controller .left ul li.infoContainer .infoContainerInner .currentTime,
+#player-controller .left ul li.infoContainer .infoContainerInner .currentSong {
+    color: #ddd;
+}
+#player-controller .left ul li.infoContainer .infoContainerInner .progressBg {
+    background: #5A93CC;
+    border-radius: 1rem;
+    left: 1rem;
+}
+#player-controller .right ul li a.dubup:hover,
+#player-controller .right ul li a.dubup.voted,
+#player-controller .right ul li a.dubdown:hover,
+#player-controller .right ul li a.dubdown.voted,
+#player-controller .right ul li a.add-to-playlist-button.grabbed {
+    background: rgba(0,0,0,0);
+}
+#player-controller .right ul li a.dubup.voted span,
+#player-controller .right ul li a.dubup:hover:not(.voted) .icon-arrow-up {
+    color: #93CC5A;
+}
+#player-controller .right ul li a,
+#player-controller .right ul li a.dubup:hover:not(.voted) span,
+#player-controller .right ul li a.dubup .icon-arrow-up,
+#player-controller .right ul li a.dubdown:hover:not(.voted) span,
+#player-controller .right ul li a.dubdown .icon-arrow-down,
+#player-controller .right ul li a.add-to-playlist-button.grabbed span,
+#player-controller .right ul li a.add-to-playlist-button:hover span,
+#player-controller .right ul li a span.icon-heart:before,
+#player-controller .right ul li .add-to-playlist-button .icon-downvote, #player-controller .right ul li .dubdown .icon-downvote {
+    color: #ccc;
+}
+#player-controller .right ul li a.dubdown.voted span,
+#player-controller .right ul li a.dubdown:hover:not(.voted) .icon-arrow-down {
+    color: #FF4060;
+}
+
+#player-controller .right ul li a:hover span.icon-heart:before,
+#player-controller .right ul li a.add-to-playlist-button.grabbed span,
+#player-controller .right ul li a.add-to-playlist-button.grabbed .icon-heart:before {
+    color: #CC5A93;
+}
+#player-controller .right ul li .display-browser:hover .icon-playlist {
+    color: #5A93CC;
+}
+
+
+/* Right side menu */
+#private-messages .loading {
+    background: rgba(50,50,50,1);
+    color: #eee;
+    border-bottom-left-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+}
+#private-messages .main-message-list, 
+#private-messages .message-details {
+    background: linear-gradient(to bottom, rgba(15,15,15,0.75) 0%, rgba(30,30,30,0.95) 10%, rgba(15,15,15,0.95) 90%, rgba(15,15,15,0.66) 100%);
+}
+#main-menu-right .close-menu {
+    background: linear-gradient(to bottom, rgba(25,25,25,1) 0%, rgba(25,25,25,1) 175%);
+}
+#main-menu-right .close-menu:hover span {
+    color: #fff;
+}
+#main-menu-right .close-menu .icon-close {
+    padding: 0 0 0 2px;
+    color: #aaa;
+}
+#main-menu-right .close-menu .icon-close:before {
+    content: "\e800";
+    line-height: 1.9;
+    font-size: 20px;
+    padding-left: 1px;
+}
+#private-messages .message-details .message-header {
+    padding: 1em 1em;
+    border-bottom: 1px solid #333;
+    background: #1a1a1a;
+    z-index: 12;
+}
+#private-messages .main-message-list .message-header, 
+#private-messages .message-details .message-header {
+    background: rgba(25,25,25,1);
+    border-bottom: 1px solid #222;
+}
+#private-messages .main-message-list .message-header input, 
+#private-messages .message-details .message-header input {
+    border: 1px solid rgba(40,40,40,1);
+}
+#private-messages .main-message-list ul.message-list li.message-item, 
+#private-messages .message-details ul.message-list li.message-item {
+    border-bottom: 1px solid #222;
+}
+#private-messages .main-message-list .message-header a, 
+#private-messages .message-details .message-header a {
+    color: #aaa;
+    font-size: 1rem;
+}
+#private-messages .main-message-list .message-header a:hover, 
+#private-messages .message-details .message-header a:hover {
+    color: #eee;
+}
+#private-messages .main-message-list ul.message-list li.message-item .message-content h3, 
+#private-messages .message-details ul.message-list li.message-item .message-content h3 {
+    color: #5A93CC;
+}
+#private-messages .main-message-list ul.message-list li.message-item.new-message:before, 
+#private-messages .message-details ul.message-list li.message-item.new-message:before {
+    background: #5A93CC;
+}
+#private-messages .private-message-details-info, 
+#private-messages .private-message-info {
+    color: #aaa;
+}
+#private-messages .main-message-list ul.message-list li.message-item .message-content .username-handle, 
+#private-messages .message-details ul.message-list li.message-item .message-content .username-handle {
+    color: #eee;
+    font-weight: 400;
+}
+#main-message-list .search-results .search-results-users .result-item {
+    background: rgba(20,20,20,1);
+}
+#main-message-list .search-results .search-results-users .result-item:hover {
+    background: #333;
+    color: #fff;
+}
+
+/* Left side Menu and Lobby */
+#main-menu-left {
+    padding: 5rem 0 0;
+    background: linear-gradient(to bottom, rgba(20,20,20,0.66) 0%, rgba(20,20,20,0.75) 10%, rgba(20,20,20,0.75) 90%, rgba(20,20,20,0.66) 100%)!important;
+    height: calc(100% - 114px);
+    left: -224px;
+    left: -14rem;
+    top: 58px;
+    width: 215px;
+}
+#main-menu-left a,
+#main-menu-left a span,
+#main-menu-left a.room-active-link {
+    color: #ccc;
+}
+#main-menu-left a:hover,
+#main-menu-left a span:hover,
+#main-menu-left .close-menu span:hover {
+    color: #fff;
+}
+/* Lobby */
+#room-list .room-loby-header {
+    background: rgba(20,20,20,0.66);
+    border-top: 1px solid #878c8e;
+}
+#room-list .room-loby-header .links-container a {
+    color: #ddd;
+}
+#room-list .room-loby-header .links-container a:hover,
+#room-list #container-room-list .room-item header:hover {
+    color: #fff;
+    cursor: pointer;
+}
+#room-list #container-room-list .room-item .roomImage .join {
+    background: rgba(200,200,200,0.5);
+    color: #ddd;
+    text-shadow: #222 2px 2px 1px;
+}
+#roomFormUpdate form .modal-footer.mainForm button:hover {
+    background: #5A93CC;
+    color: #222229;
+}
+
+/* Chat container */
+#main-room .right_section {
+    background: rgba(15,15,15,0.66);
+    border-radius: 0.5rem;
+}
+#chat .chat_tools span:after {
+    border: 1px solid #ddd;
+}
+#chat .chat_tools .display-chat,
+#main-room.display-users-rooms #chat .display-room-users,
+#main-room.display-chat-settings #chat .display-chat-settings,
+#chat .chat_tools .icon-chatsettings:hover,
+#chat .chat_tools .display-room-users.icon-people:hover,
+#main-room.display-users-rooms #chat .display-chat:hover, 
+#main-room.display-users-rooms #chat .display-chat-settings:hover,
+#main-room.display-chat-settings #chat .display-chat:hover,
+#main-room.display-chat-settings #chat .display-room-users:hover,
+#chat .chat-container .pusher-chat-widget-input .icon-camera:hover {
+    color: #fff;
+}
+#chat .chat-container .pusher-chat-widget-input .icon-camera {
+    color: #aaa;
+}
+#chat .pusher-chat-widget-input #new-messages-counter {
+    background: #5A93CC;
+    color: #222229;
+    opacity: 1;
+}
+#chat .chat-container ul.chat-main li .chatDelete,
+#chat .chat-container ul.chat-main li:focus .chatDelete, 
+#chat .chat-container ul.chat-main li:hover .chatDelete {
+    color: #ddd!important;
+    opacity: 1;
+    font-size: 0.65rem;
+    padding-left: 2rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    padding-top: 0.2rem;
+}
+#chat .chat-container ul.chat-main li .chatDelete:hover {
+    color: #FF4060!important;
+}
+    /* Chat messages */
+#chat .chat-container .chat-messages .chat-main li.chat-welcome-message a {
+    color: #5A93CC;
+}
+#chat .chat-container .chat-messages .chat-main li.chat-system-grabbed,
+#chat .chat-container .chat-messages .chat-main li.chat-system-joined,
+#chat .chat-container .chat-messages .chat-main li.chat-system-left,
+#chat .chat-container .chat-messages .chat-main li.chat-system-loading,
+#chat .chat-container .chat-messages .chat-main li.system, 
+#chat .chat-container .chat-messages .chat-main li.system-error {
+    font-size: 0.9em;
+    font-weight: 700;
+    opacity: 1;
+    text-align: center;
+    text-shadow: 0px 0px 1px rgba(0,0,0,0.3);
+}
+#chat .chat-container .chat-messages .chat-main li.system,
+#chat .chat-container .chat-messages .chat-main li.chat-system-loading,
+#chat .chat-container .chat-messages .chat-main li.system-error {
+    color: #5A93CC!important;
+}
+.chat-system-joined,
+.system-join,
+.system-userjoin {
+    color: #5A93CC!important;
+}
+.chat-system-left,
+.system-leave,
+.system-userleave {
+    color: #935ACC!important;
+}
+.system-dubup,
+.system-userudub {
+    color: #93CC5A!important;
+}
+.system-dubdown,
+.system-userddub {
+    color: #FF4060!important;
+}
+.chat-system-grabbed,
+.system-grab {
+    color: #CC5A93!important;
+}
+.system-resume,
+.system-pause {
+    color: #5ACC93!important;
+}
+#chat .chat-container .chat-messages .chat-main li {
+    font-size: .9rem;
+    padding: 0 0 1rem;
+    overflow: hidden;
+}
+#chat .chat-container .chat-messages .chat-main li .activity-row .text p {
+    color: #ddd;
+    opacity: 1;
+}
+#chat .chat-container .chat-messages .chat-main li .activity-row .text img {
+    max-height: 400px;
+}
+#chat .chat-container .chat-messages .chat-main li.chat-me-command-joined {
+    color: #aaa;
+}
+#chat .chat-container ul.chat-main li .text a.autolink,
+#chat .chat-container ul.chat-main li .activity-row .text p a.autolink,
+#chat .chat-container ul.chat-main li .activity-row .text p a.autolink:visited:hover,
+#chat .chat-container .chat-messages.ps-container ul.chat-main li.chat-me-command-joined .text a:hover,
+#chat .chat-container .chat-messages.ps-container ul.chat-main li.chat-me-command-joined .text a:visited:hover {
+    color: #5A93CC;
+    font-weight: 400;
+}
+#chat .chat-container ul.chat-main li .activity-row .text p a.autolink:hover,
+#chat .chat-container ul.chat-main li .activity-row .text p a.autolink:visited,
+#chat .chat-container .chat-messages.ps-container ul.chat-main li.chat-me-command-joined .text a:visited {
+    color: #0063a6;
+    font-weight: 400;
+}
+#chat .chat-container .chat-messages .chat-main li .activity-row .text .username-handle {
+    color: #fff;
+    opacity: 1;
+    font-weight: 400;
+}
+
+    /* Usernames */
+#chat .chat-container .chat-messages .chat-main li .activity-row .text a.username, 
+#chat .chat-container .chat-messages .chat-main li .activity-row .text a.username:visited {
+    display: block;
+    font-size: .9rem;
+    line-height: 1.2;
+    font-weight: 400;
+    opacity: 1;
+}
+#chat .chat-container .chat-messages .chat-main li .activity-row .text a.username:hover {
+    color: #fff;
+}
+
+/* User list */
+#main_avatar_room .avatar_tools .filter-toggle:hover{
+    color:#ccc;
+}
+
+/* Options tab */
+#chat .chat-options .chat-option-header {
+    font-size: 1rem;
+    color: #ddd;
+}
+#chat .chat-options .chat-option-buttons span {
+    background: rgba(15,15,15,0.25);
+    color: #aaa;
+}
+#chat .chat-options .chat-option-buttons span:hover {
+    background: rgba(50,50,50,0.25);
+    color: #fff!important;
+}
+#chat .chat-options .chat-option-buttons span.active {
+    background: rgba(50,50,50,0.25);
+}
+#chat .chat-options .chat-option-buttons span.active i {
+    color: #fff;
+}
+/* User popup */
+#user_popover {
+    border-radius: 1rem;
+    background: rgba(40,45,50,0.95);
+}
+#user_popover .usercontent header h3 {
+    color: #eee;
+}
+#user_popover .usercontent header .dubs {
+    color: #ccc;
+}
+#user_popover .actions,
+#user_popover .global-actions {
+    background: rgba(50,55,60,0.4);
+}
+#user_popover .actions a,
+#user_popover .global-actions a {
+    color: #aaa;
+    border-top: 1px solid #444;
+    outline: none;
+    font-weight: 400;
+}
+#user_popover .actions a:hover,
+#user_popover .global-actions a:hover {
+    background: rgba(65,70,75,0.4);
+}
+#user_popover .actions a input {
+    vertical-align: middle;
+    border-radius: 0rem;
+    border: 1px solid #55555a;
+    background: rgba(30,30,30,0.4);
+    color: #ddd;
+    padding: 2.4px 8px;
+    padding: .15rem .5rem;
+    width: 64px;
+    width: 4rem;
+}
+#user_popover .actions a, #user_popover .global-actions a{
+    color:#fff;
+}
+/* Video (Main player - left) */
+    /* Header */
+#main_player {
+    background: rgba(15,15,15,0.66);
+    border-radius: 0.0rem;
+    border-top: 1px solid #878c8e;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+#main_player .player_header {
+    background: rgba(20,20,20,0.66);
+    color: #ccc;
+    opacity: 1;
+    border-radius: 0.0rem;
+    top: -41px;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+#main_player .player_header span {
+    background: rgba(20,20,20,0.0);
+    color: #ccc;
+    opacity: 1;
+    border-radius: 0.0rem;
+}
+#main_player .player_header span:hover:not(.active) {
+    background: rgba(40,40,40,0.0);
+    color: #fff;
+}
+#main_player .player_header span.active {
+    /*background: rgba(60,60,60,0.0);*/
+    color: #fff;
+    opacity: 1;
+    border-bottom: 3px solid #ddd;
+}
+#main_player .player_header span.edit-room i {
+    line-height: 1.2;
+    left: -0.5px;
+}
+#main_player .player_header span.skip-el {
+    margin-right: 0;
+}
+#main_player {
+    border-radius: 0.0rem;
+    border-top: 1px solid #878c8e;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+#main_player .player_header {
+    background: inherit;
+    border-radius: 0.0rem;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    padding-top: 12px;
+    top: -49px;
+}
+#main_player .player_header span {
+    background: rgba(0,0,0,0);
+    color: #878c8e;
+    opacity: 1;
+    font-size: 15.2px;
+    font-size: .95rem;
+    line-height: .8;
+    border-radius: 0.0rem;
+}
+#main_player .player_header .active {
+    padding-bottom: 14px;
+}
+#main_player .player_header span:hover:not(.active) {
+    background: rgba(0,0,0,0);
+    color: #fff;
+}
+#main_player .player_header span.active {
+    background: rgba(0,0,0,0);
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+#main_player .player_header span.edit-room i {
+    line-height: 0.95;
+    left: -0.5px;
+}
+#main_player .player_header span.skip-el {
+    margin-right: 0;
+}
+#main-room .right_section {
+    border-radius: 0.5rem;
+}
+
+    /* Room info */
+#room-info-display .room-info-display-wrapper .header span i {
+    color: #5A93CC;
+}
+#room-info-display .room-info-display-wrapper .description {
+    color: #ddd;
+}
+
+    /* Mod controls */
+#main_player #mods-controllers .mod-controllers-headers a,
+#mods-controllers .mods-controllers-wrapper .mods-controllers-ban-list.show-controller .user-list li .actions, 
+#mods-controllers .mods-controllers-wrapper .mods-controllers-mute-list.show-controller .user-list li .actions,
+#mods-controllers .mods-controllers-main-wrapper .mods-controllers-wrapper .mods-controllers-staff-list .user-list li .actions {
+    color: #aaa;
+}
+#main_player #mods-controllers .mod-controllers-headers a:hover,
+#main_player #mods-controllers .mod-controllers-headers .active,
+#mods-controllers .mods-controllers-wrapper .mods-controllers-ban-list.show-controller .user-list li .actions:hover, 
+#mods-controllers .mods-controllers-wrapper .mods-controllers-mute-list.show-controller .user-list li .actions:hover,
+#mods-controllers .mods-controllers-main-wrapper .mods-controllers-wrapper .mods-controllers-staff-list .user-list li .actions:hover {
+    color: #fff;
+}
+#mods-controllers .mods-controllers-main-wrapper .mods-controllers-wrapper .mods-controllers-commands-list .chat-command-list li,
+#mods-controllers .mods-controllers-main-wrapper .mods-controllers-wrapper .mods-controllers-commands-list .chat-command-list li .actions {
+    cursor: text;
+}
+#main_player .player_sharing span,
+#main_player .player_sharing .player-controller-container span {
+    color: #aaa;
+}
+#main_player .player_sharing span:hover,
+#main_player .player_sharing .player-controller-container span:hover {
+    color: #fff;
+}
+#main_player .player_sharing .player-controller-container span.videoquality-el.show {
+    color: #666;
+}
+#main_player .player_sharing .player-controller-container span.videoquality-el.show:hover {
+    color: #888;
+}
+#main_player .player_sharing .player-controller-container span.videoquality-el.active-hd,
+#main_player .player_sharing .player-controller-container span.videoquality-el.active-hd:hover {
+    color: #aaa;
+}
+#main_player .player_sharing .player-controller-container .volume-controller-container #volume-div .ui-slider-handle {
+    background: #aaa;
+}
+#main_player .player_sharing .player-controller-container .volume-controller-container #volume-div .ui-slider-range-min {
+    background: #5A93CC;
+}
+#main_player .player_sharing .player-controller-container .volume-controller-container #volume-div .ui-slider-handle:hover {
+    background: #fff;
+}
+#main_player .player_sharing .player-controller-container .hideVideo-el span.icon-eye-blocked:before {
+    content: "\e90b";
+}
+#main_player .player_sharing .player-controller-container .hideVideo-el span.icon-eye-unblocked:before {
+    content: "\e90a";
+}
+#main_player .active-queue-display {
+    background: rgba(15,15,15,0.66) !important;
+    color: #fff !important;
+    font-weight: 400 !important;
+}
+#main_player .play-song-link-browser {
+    background: rgba(15,15,15,0.66) !important;
+}
+#main_player .active-queue-display:hover,
+#main_player .play-song-link-browser:hover {
+    background: rgba(25,25,25,0.66) !important;
+    color: #eee;
+}
+#main_player .play-song-link-browser i {
+    color: #5A93CC !important;
+}
+#mods-controllers .mods-controllers-main-wrapper .mods-controllers-wrapper .mods-controllers-staff-list .user-list li.mod{
+    color:#3498db;
+}
+#mods-controllers .mods-controllers-main-wrapper .mods-controllers-wrapper .mods-controllers-staff-list .user-list li.co-owner{
+    color:#cb29eb;
+}
+#mods-controllers .mods-controllers-main-wrapper .mods-controllers-wrapper .mods-controllers-staff-list .user-list li.manager{
+    color:#EA2027;
+}
+#mods-controllers .mods-controllers-main-wrapper .mods-controllers-wrapper .mods-controllers-staff-list .user-list li.vip{
+    color:#f7b731;
+}
+#mods-controllers .mods-controllers-main-wrapper .mods-controllers-wrapper .mods-controllers-staff-list .user-list li.resident-dj{
+    color:#99d5ff;
+}
+
+/* Playlist browser */
+    /* Header */
+#browser .browser-content {
+    background: rgba(60,60,60,0.92);
+}
+#browser .browser-content .browser-content-header .close-browser,
+#browser .browser-content .browser-content-header {
+    background: rgba(50,50,50,1);
+    color: #ddd;
+}
+#browser .browser-content .browser-content-header .form input {
+    background: rgba(70,70,70,1);
+    color: #ddd;
+}
+#browser .browser-content .browser-content-header .form .music-type-select,
+#browser .browser-content .browser-content-header .form .music-type-select .music-type-dropdown {
+    background: rgba(50,50,50,1);
+    color: #ddd;
+}
+#browser .browser-content .browser-content-header .form .music-type-select .music-type-dropdown span:hover {
+    background: #444;
+    color: #fff;
+}
+#browser .browser-content .browser-content-header .form .music-type-select .music-type-dropdown {
+    margin-top: 2.5rem;
+}
+#browser .browser-content .browser-content-header .form .music-type-select .music-type-dropdown span {
+    height: 2.5rem;
+}
+#browser .browser-content .browser-content-header .close-browser:hover {
+    background: #444;
+    color: #fff;
+}
+    /* Sidebar */
+#browser .browser-content .browser-content-main .sidebar {
+    background: rgba(40,40,40,0.7);
+}
+#browser .browser-content .browser-content-main .sidebar .display-sidebar {
+    background: #5A93CC;
+    color: #1c1c1c;
+}
+#browser .browser-content .browser-content-main .sidebar #playlists-scroll .playlist-style li {
+    padding: 0.1rem 1rem;
+    font-weight: 700;
+}
+#browser .browser-content .browser-content-main .sidebar #playlists-scroll .playlist-style li.room_history {
+    border-width: 0 0 3px 0;
+    -webkit-border-image: 
+    -webkit-linear-gradient(left, rgba(0,0,0,0) 0%, rgba(70,70,70,1) 50%, rgba(0, 0, 0, 0)) 100% 1;
+    -o-border-image:
+    -o-linear-gradient(left, rgba(0,0,0,0) 0%, rgba(70,70,70,1) 50%, rgba(0, 0, 0, 0)) 100% 1;
+    -moz-border-image:
+    -moz-linear-gradient(left, rgba(0,0,0,0) 0%, rgba(70,70,70,1) 50%, rgba(0, 0, 0, 0)) 100% 1;
+}
+#browser .browser-content .browser-content-main .sidebar #playlists-scroll .playlist-style li:hover span,
+#browser .browser-content .browser-content-main .sidebar #playlists-scroll .playlist-style li.selected span {
+    color: #222229;
+}
+#browser .browser-content .browser-content-main .sidebar #playlists-scroll .playlist-style li.selected,
+#browser .browser-content .browser-content-main .sidebar #playlists-scroll .playlist-style li:hover:not(.selected),
+#browser .browser-content .browser-content-main .sidebar .import-playlist:hover,
+#browser .browser-content .browser-content-main .sidebar .create-playlist:hover {
+    background: #5A93CC;
+    color: #222229;
+}
+#browser .browser-content .browser-content-main .sidebar .import-playlist,
+#browser .browser-content .browser-content-main .sidebar .create-playlist {
+    background: rgba(50,50,50,1);
+    color: #ddd;
+}
+#browser .browser-content .browser-content-main .sidebar .import-playlist span,
+#browser .browser-content .browser-content-main .sidebar .create-playlist .create-playlist-display span {
+    color: #5A93CC;
+}
+#browser .browser-content .browser-content-main .sidebar .import-playlist:hover span,
+#browser .browser-content .browser-content-main .sidebar .create-playlist:hover .create-playlist-display span{
+    color: #222229;
+}
+#browser .browser-content .browser-content-main .sidebar .create-playlist .create-playlist-form .icon-createplaylist {
+    background: transparent;
+}
+#browser .browser-content .browser-content-main .sidebar .import-playlist:not(:hover) .icon-inbox,
+#browser .browser-content .browser-content-main .sidebar .import-playlist:not(:hover) .icon-inbox:before,
+#browser .browser-content .browser-content-main .sidebar .create-playlist .create-playlist-form:not(:hover) .icon-createplaylist,
+#browser .browser-content .browser-content-main .sidebar .create-playlist .create-playlist-form:not(:hover) .icon-createplaylist:before {
+    background: transparent;
+    color: #5A93CC;
+}
+
+    /* Video results container */
+#browser .browser-content .browser-content-main .nano .loading {
+    padding: 14px 24px;
+    background: rgba(50,50,50,1);
+    color: #eee;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-radius: 2px;
+}
+#browser .browser-content .browser-content-main .nano .content-videos {
+    background: rgba(0,0,0,0);
+}
+#browser .browser-content .browser-content-main .nano .content-videos .playlist_info, 
+#browser .browser-content .browser-content-main .nano .content-videos .queue_info {
+    background: rgba(0,0,0,0);
+    border-bottom: 1px solid rgba(70,70,70,1);
+}
+#browser .browser-content .browser-content-main .nano .content-videos .playlist_info .right a.text-button, 
+#browser .browser-content .browser-content-main .nano .content-videos .queue_info .right a.text-button {
+    background: rgba(50,50,50,1);
+    color: #ccc;
+    padding: 0.99rem 2rem;
+    border: 0px solid rgba(50,50,50,1);
+    margin: 0px 0px 0px 0px;
+    border-bottom: 1px solid rgba(50,50,50,1);
+}
+#browser .browser-content .browser-content-main .nano .content-videos .playlist_info .right a, 
+#browser .browser-content .browser-content-main .nano .content-videos .playlist_info .right a.icon-shuffle.shuffle-playlist, 
+#browser .browser-content .browser-content-main .nano .content-videos .playlist_info .right a.icon-trash.delete-playlist {
+    background: rgba(50,50,50,1);
+    color: #ccc;
+    padding: 1.25rem 2rem;
+    border: 0px solid rgba(50,50,50,1);
+    border-bottom: 1px solid rgba(50,50,50,1);
+}
+#browser .browser-content .browser-content-main .nano .content-videos .queue_info .right a.text-button.pause-queue.pause-queue-browser-bth {
+    border-left: 1px solid rgba(50,50,50,1);
+}
+#browser .browser-content .browser-content-main .nano .content-videos .queue_info .right a.text-button.clear-queue.clear-queue-browser-bth {
+    border-right: 1px solid rgba(50,50,50,1);
+    border-left: 1px solid rgba(50,50,50,1);
+}
+#browser .browser-content .browser-content-main .nano .content-videos .playlist_info .right a.icon-editplaylist:hover,
+#browser .browser-content .browser-content-main .nano .content-videos .playlist_info .right a.icon-shuffle.shuffle-playlist:hover, 
+#browser .browser-content .browser-content-main .nano .content-videos .playlist_info .right a.icon-trash.delete-playlist:hover,
+#browser .browser-content .browser-content-main .nano .content-videos .playlist_info .right a.text-button:hover, 
+#browser .browser-content .browser-content-main .nano .content-videos .queue_info .right a.text-button:hover {
+    background: rgba(60,60,60,1);
+    color: #fff;
+}
+#browser .browser-content .browser-content-main .nano .content-videos .queue_info .right a.icon-shuffle,
+#browser .browser-content .browser-content-main .nano .content-videos .queue_info .right a.icon-lock.room-queue-lock,
+#browser .browser-content .browser-content-main .nano .content-videos .queue_info .right a.icon-unlocked.room-queue-unlock {
+    background: rgba(50,50,50,1);
+    color: #ddd;
+    padding: 1.22rem 2.8rem;
+    border: 1px solid rgba(50,50,50,1);
+}
+#browser .browser-content .browser-content-main .nano .content-videos .queue_info .right a.icon-shuffle:hover,
+#browser .browser-content .browser-content-main .nano .content-videos .queue_info .right a.icon-lock.room-queue-lock:hover,
+#browser .browser-content .browser-content-main .nano .content-videos .queue_info .right a.icon-unlocked.room-queue-unlock:hover {
+    background: rgba(60,60,60,1);
+    color: #fff;
+}
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .history-item, 
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .playlist-item, 
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .queue-item, 
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .search-item {
+    background: rgba(0,0,0,0);
+    border: 1px solid rgba(50,50,50,1);
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 1px solid rgba(70,70,70,1);
+    cursor: default;
+    margin-left: 1px;
+}
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .history-item.selected, 
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .playlist-item.selected, 
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .queue-item.selected, 
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .search-item.selected {
+    border: 1px solid #5A93CC;
+    margin-left: 0px;
+}
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .search-item .description .preview,
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .history-item .description .preview,
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .playlist-item .description .preview, 
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .queue-item .description .preview {
+    color: #5A93CC;
+    cursor: pointer;
+}
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .history-item .description .dubs-display,
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .history-item .description .playedby,
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .queue-item .description .playedby {
+    color: #aaa;
+    font-weight: 400;
+}
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .history-item .description .dubs-display b,
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .history-item .description .playedby b,
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .queue-item .description .playedby b {
+    color: #eee;
+}
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .queue-item .actions .text-button.pause_dj_all:hover,
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .queue-item .actions .img_bg.remove_icon:hover,
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .queue-item .actions .set_song_to_top_queue:hover,
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .queue-item .actions .img_bg.add_to_playlist:hover,
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .queue-item .actions .text-button.remove_dj_all:hover,
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .search-item .actions .img_bg.add_to_queue:hover,
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .search-item .actions .img_bg.add_to_playlist:hover,
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .history-item .actions .img_bg.add_to_queue:hover,
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .history-item .actions .img_bg.add_to_playlist:hover,
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .playlist-item .actions .img_bg.remove_icon:hover,
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .playlist-item .actions .img_bg.add_to_queue:hover,
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .playlist-item .actions .set_song_to_top_queue:hover,
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .playlist-item .actions .img_bg.add_to_playlist:hover,
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .browserPlaylistItems.display-mod-controls .room-queue-item .actions .remove_dj:hover, 
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .browserPlaylistItems.display-mod-controls .room-queue-item .actions .set_song_to_top_queue:hover {
+    background: #444;
+    color: #fff;
+}
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .queue-item .actions .text-button.pause_dj_all,
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .queue-item .actions .img_bg.remove_icon,
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .queue-item .actions .set_song_to_top_queue,
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .queue-item .actions .img_bg.add_to_playlist,
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .queue-item .actions .text-button.remove_dj_all,
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .history-item .actions .img_bg.add_to_queue,
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .history-item .actions .img_bg.add_to_playlist,
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .playlist-item .actions .img_bg.remove_icon,
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .playlist-item .actions .img_bg.add_to_queue,
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .playlist-item .actions .set_song_to_top_queue,
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .playlist-item .actions .img_bg.add_to_playlist,
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .browserPlaylistItems.display-mod-controls .room-queue-item .actions .remove_dj, 
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .browserPlaylistItems.display-mod-controls .room-queue-item .actions .set_song_to_top_queue {
+    background: #333;
+    color: #eee;
+    border: 1px solid rgba(90,90,90,1);
+}
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .playlist-item .actions .img_bg.remove_icon,
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .queue-item .actions .img_bg.remove_icon,
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .history-item .actions .img_bg.add_to_playlist,
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .browserPlaylistItems.display-mod-controls .room-queue-item .actions .remove_dj {
+    margin: .3rem 4.5rem 0 0;
+}
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .queue-item:hover .timeDisplay, 
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .search-item:hover .timeDisplay,
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .history-item:hover .timeDisplay, 
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .playlist-item:hover .timeDisplay {
+    display: block;
+}
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .queue-item .actions .img_bg.add_to_playlist span.icon-heart:before,
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .history-item .actions .img_bg.add_to_playlist span.icon-heart:before,
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .playlist-item .actions .img_bg.add_to_playlist span.icon-heart:before {
+    color:#eee;
+}
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .queue-item .actions .img_bg.add_to_playlist:hover span.icon-heart:before,
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .history-item .actions .img_bg.add_to_playlist:hover span.icon-heart:before,
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .playlist-item .actions .img_bg.add_to_playlist:hover span.icon-heart:before {
+    color: #CC5A93;
+}
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .queue-item .actions .img_bg.add_to_queue span.icon-play:before,
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .history-item .actions .img_bg.add_to_queue span.icon-play:before,
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .playlist-item .actions .img_bg.add_to_queue span.icon-play:before {
+    color:#eee;
+}
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .queue-item .actions .img_bg.add_to_queue:hover span.icon-play:before,
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .history-item .actions .img_bg.add_to_queue:hover span.icon-play:before,
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .playlist-item .actions .img_bg.add_to_queue:hover span.icon-play:before {
+    color: #FF0000;
+}
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .queue-item .display-error, 
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .queue-item .display-success, 
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .history-item .display-error, 
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .history-item .display-success, 
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .search-item .display-error, 
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .search-item .display-success,
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .playlist-item .display-error, 
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .playlist-item .display-success {
+    background: #444;
+    color: #ddd;
+    font-size: .8rem;
+}
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .history-item .description .skipped {
+    color: #d63031;
+}
+#browser .browser-content #import-playlist-container,
+#addToPlaylistFloatContainer {
+    background: rgba(50,50,50,1);
+    border-radius: 1rem;
+}
+#addToPlaylistFloatContainer .create-playlist-header {
+    color: #ddd;
+}
+#addToPlaylistFloatContainer .create-playlist-header .icon-close {
+    font-size: 1.1rem;
+    margin-left: 0;
+    margin-top: .5rem;
+    cursor: pointer;
+    float: right;
+}
+#browser .browser-content #import-playlist-container .playlist-type-select span:hover,
+#addToPlaylistFloatContainer .create-playlist-header span:hover.icon-close:before{
+    color: #fff;
+}
+#addToPlaylistFloatContainer .create-playlist-input input {
+    border-bottom: 1px solid #55555a;
+}
+#addToPlaylistFloatContainer .playlist-list-action li {
+    border-bottom: 1px solid #33333a;
+}
+#addToPlaylistFloatContainer .playlist-list-action li:hover {
+    background: #5A93CC;
+    color: #222229;
+    font-weight: 700;
+}
+#addToPlaylistFloatContainer .create-playlist-input .icon-add {
+    background: none;
+    color: #5A93CC;
+    cursor: pointer;
+}
+#addToPlaylistFloatContainer .create-playlist-input .icon-add:hover {
+    background: #5A93CC;
+    color: #222229;
+}
+#browser .browser-content #import-playlist-container .import-playlist-youtube span,
+#browser .browser-content #import-playlist-container .close-import-playlist {
+    background: transparent;
+    color: #ddd;
+}
+#browser .browser-content #import-playlist-container .import-playlist-youtube span:hover,
+#browser .browser-content #import-playlist-container .close-import-playlist:hover {
+    background: transparent;
+    color: #5A93CC;
+}
+#browser .browser-content #import-playlist-container .import-playlist-soundcloud span, 
+#browser .browser-content #import-playlist-container .import-playlist-youtube span {
+    background: #5A93CC;
+    color: #222;
+}
+#browser .browser-content #import-playlist-container .err-message, #browser .browser-content #import-playlist-container .loading-import {
+    color: #5A93CC;
+}
+
+    /* Video preview */
+.playerPreview {
+    background: rgba(30,30,30,1);
+    padding: 0.5rem;
+}
+.playerPreview .player-preview-container-wrapper .close {
+    border-top-right-radius: 1rem;
+    background: rgba(30,30,30,1);
+    color: #aaa;
+    top: 0;
+    right: 0;
+}
+.playerPreview .player-preview-container-wrapper .close:hover {
+    background: rgba(30,30,30,1);
+    color: #fff;
+}
+.playerPreview .player-preview-container-wrapper .buffering, 
+.playerPreview .player-preview-container-wrapper .error, 
+.playerPreview .player-preview-container-wrapper .loading, 
+.playerPreview .player-preview-container-wrapper .replay {
+    color: #222229;
+    background: #5A93CC;
+}
+.playerPreview .player-preview-container-wrapper .controlContainer .progressContainer .loaded,
+.playerPreview .player-preview-container-wrapper .controlContainer .progressContainer .progress {
+    background: #5A93CC;
+}
+
+.playerPreview .player-preview-container-wrapper .ui-slider-range,
+.playerPreview .player-preview-container-wrapper .ui-slider-handle:hover {
+    background: #5A93CC;
+}
+.playerPreview .player-preview-container-wrapper .ui-slider-handle {
+    background: #eee;
+}
+
+/* User profile page */
+#profileMainSection .profileView .header .pictureContainer .updatePictureGif {
+    background: #5A93CC;
+}
+#profileMainSection .profileView .header .pictureContainer:hover .updatePictureGif {
+    opacity: .75;
+}
+#profileMainSection .profileView .infoProfile .edit-btn, 
+#profileMainSection .profileView .infoProfile .follow-btn {
+    background: none;
+    color: #ddd;
+    border: 1px solid #ddd;
+}
+#profileMainSection .profileView .infoProfile .edit-btn:hover, 
+#profileMainSection .profileView .infoProfile .follow-btn:hover {
+    background: #5A93CC;
+    color: #222;
+    border: 1px solid #222;
+}
+
+/* Room form */
+#roomFormUpdate, #roomInfoModal {
+    background: rgba(40,40,40,0.96);
+}
+#roomFormUpdate .modal-footer, #roomInfoModal .modal-footer,
+#roomFormUpdate .modal-header, #roomInfoModal .modal-header {
+    background: rgba(25,25,25,0.5);
+}
+#roomFormUpdate .mid label.display-block, #roomInfoModal .mid label.display-block {
+    color: #5A93CC;
+}
+#roomFormUpdate .mid input, 
+#roomFormUpdate .mid select, 
+#roomFormUpdate .mid textarea, 
+#roomInfoModal .mid input, 
+#roomInfoModal .mid select, 
+#roomInfoModal .mid textarea {
+    border: 1px solid #878c8e;
+    background: none;
+    color: #eee;
+}
+#roomFormUpdate .form-horizontal .mid .control-group select option {
+    background: rgba(15,15,15,0.9);
+    color: #ddd;
+}
+#roomFormUpdate .mid #progress .bar, 
+#roomInfoModal .mid #progress .bar {
+    background: #5A93CC;
+}
+
+.playerPreview .song-info .song-info-wrapper .below .user{
+    color:grey;
+}
+
+/* CMS */
+.grablist,
+.updublist,
+.downdublist,
+.main_content {
+    background: linear-gradient(to bottom, rgba(15,15,15,0.66) 0%, rgba(20,20,20,0.9) 5%, rgba(20,20,20,0.9) 90%, rgba(15,15,15,0.66) 100%)!important;
+}
+
+/* System Message Colour */
+#chat .chat-container .chat-messages .chat-main li.system, #chat .chat-container .chat-messages .chat-main li.chat-system-loading, #chat .chat-container .chat-messages .chat-main li.system-error, .system-mute, .system-unmute {
+    color:#e67e22!important;
+}
+
+/* Default Colour */
+
+#chat .chat-container .chat-messages .chat-main li .user-role, #chat .chat-container .chat-messages .chat-main li .username, #chat .chat-container .chat-messages .chat-main li span.user-role-icon {
+    color:#dcdde1;
+}
+
+#main_avatar_room #main-user-list-room #avatar-list li p.username{
+    color:#dcdde1;
+}
+
+#player-controller .left ul li.infoContainer .infoContainerInner .currentDJSong .user-role, #player-controller .left ul li.infoContainer .infoContainerInner .currentDJSong .username, #player-controller .left ul li.infoContainer .infoContainerInner .currentDJSong span.user-role-icon {
+    color:#dcdde1;
+}
+
+
+/* Creator Colour */
+#chat .chat-container .chat-messages .chat-main li.creator .user-role, #chat .chat-container .chat-messages .chat-main li.creator .username, #chat .chat-container .chat-messages .chat-main li.creator span.user-role-icon {
+    color:#16a085;
+}
+
+#chat .chat-container .chat-messages .chat-main li.creator .username:before {
+    content: url(https://cdn.betterttv.net/emote/5b444de56b9160327d12534a/1x.gif);
+    position: relative;
+    top: 3px;
+    padding-right: 4px;
+}
+
+#main_avatar_room #main-user-list-room #avatar-list li.creator .user-role, #main_avatar_room #main-user-list-room #avatar-list li.creator .username, #main_avatar_room #main-user-list-room #avatar-list li.creator span.user-role-icon {
+    color:#16a085;
+}
+
+
+#player-controller .left ul li.infoContainer .infoContainerInner .currentDJSong.creator .user-role, #player-controller .left ul li.infoContainer .infoContainerInner .currentDJSong.creator .username, #player-controller .left ul li.infoContainer .infoContainerInner .currentDJSong.creator span.user-role-icon {
+    color:#16a085;
+}
+
+
+/* co-owner color */
+#chat .chat-container .chat-messages .chat-main li.co-owner .user-role, #chat .chat-container .chat-messages .chat-main li.co-owner .username, #chat .chat-container .chat-messages .chat-main li.co-owner span.user-role-icon{
+    color:#cb29eb;
+}
+
+/*
+#chat .chat-container .chat-messages .chat-main li.co.owner .username:before {
+    content: url(https://cdn.betterttv.net/emote/5b444de56b9160327d12534a/1x.gif);
+    position: relative;
+    top: 3px;
+    padding-right: 4px;
+}
+*/
+
+#main_avatar_room #main-user-list-room #avatar-list li.co-owner .user-role, #main_avatar_room #main-user-list-room #avatar-list li.co-owner .username, #main_avatar_room #main-user-list-room #avatar-list li.co-owner span.user-role-icon{
+    color:#cb29eb;
+}
+
+#player-controller .left ul li.infoContainer .infoContainerInner .currentDJSong.co-owner .user-role, #player-controller .left ul li.infoContainer .infoContainerInner .currentDJSong.co-owner .username, #player-controller .left ul li.infoContainer .infoContainerInner .currentDJSong.co-owner span.user-role-icon {
+    color:#cb29eb;
+}
+
+/* Manager Colour */
+#chat .chat-container .chat-messages .chat-main li.manager .user-role, #chat .chat-container .chat-messages .chat-main li.manager .username, #chat .chat-container .chat-messages .chat-main li.manager span.user-role-icon {
+    color:#EA2027;
+    font-weight:1000;
+}
+/* Manager Badge
+#chat .chat-container .chat-messages .chat-main li.manager .username:before {
+    content: url(https://cdn.betterttv.net/emote/5f1bfeb165fe924464ee7a26/1x.gif);
+    position: relative;
+    top: 3px;
+    padding-right: 4px;
+}
+*/
+
+#main_avatar_room #main-user-list-room #avatar-list li.manager .user-role, #main_avatar_room #main-user-list-room #avatar-list li.manager .username, #main_avatar_room #main-user-list-room #avatar-list li.manager span.user-role-icon{
+    color:#EA2027;
+    
+}
+
+#player-controller .left ul li.infoContainer .infoContainerInner .currentDJSong.manager .user-role, #player-controller .left ul li.infoContainer .infoContainerInner .currentDJSong.manager .username, #player-controller .left ul li.infoContainer .infoContainerInner .currentDJSong.manager span.user-role-icon {
+    color:#EA2027;
+}
+
+/* Mod Colour */
+#chat .chat-container .chat-messages .chat-main li.mod .user-role, #chat .chat-container .chat-messages .chat-main li.mod .username, #chat .chat-container .chat-messages .chat-main li.mod span.user-role-icon{
+    color:#3498db;
+}
+/*
+#chat .chat-container .chat-messages .chat-main li.mod .username:before {
+    content: url(https://cdn.betterttv.net/emote/5b444de56b9160327d12534a/1x.gif);
+    position: relative;
+    top: 3px;
+    padding-right: 4px;
+}
+*/
+#main_avatar_room #main-user-list-room #avatar-list li.mod .user-role, #main_avatar_room #main-user-list-room #avatar-list li.mod .username, #main_avatar_room #main-user-list-room #avatar-list li.mod span.user-role-icon{
+    color:#3498db;
+}
+
+#player-controller .left ul li.infoContainer .infoContainerInner .currentDJSong.mod .user-role, #player-controller .left ul li.infoContainer .infoContainerInner .currentDJSong.mod .username, #player-controller .left ul li.infoContainer .infoContainerInner .currentDJSong.mod span.user-role-icon {
+    color:#3498db;
+}
+
+/* VIP Colour */
+#chat .chat-container .chat-messages .chat-main li.vip .user-role, #chat .chat-container .chat-messages .chat-main li.vip .username, #chat .chat-container .chat-messages .chat-main li.vip span.user-role-icon{
+    color:#f7b731;
+}
+
+#chat .chat-container .chat-messages .chat-main li.vip .username:before {
+    content: url(https://raw.githubusercontent.com/Asyx3/css/main/vip.png);
+    position: relative;
+    top: 3px;
+    padding-right: 4px;
+}
+
+#main_avatar_room #main-user-list-room #avatar-list li.vip .user-role, #main_avatar_room #main-user-list-room #avatar-list li.vip .username, #main_avatar_room #main-user-list-room #avatar-list li.vip span.user-role-icon {
+    color:#f7b731;
+}
+
+#player-controller .left ul li.infoContainer .infoContainerInner .currentDJSong.vip .user-role, #player-controller .left ul li.infoContainer .infoContainerInner .currentDJSong.vip .username, #player-controller .left ul li.infoContainer .infoContainerInner .currentDJSong.vip span.user-role-icon {
+    color:#f7b731;
+}
+
+/* Admin Colour */
+#chat .chat-container .chat-messages .chat-main li.admin .user-role, #chat .chat-container .chat-messages .chat-main li.admin .username, #chat .chat-container .chat-messages .chat-main li.admin span.user-role-icon{
+    font-weight:1000;
+    color:#ff7e00;
+}
+
+#main_avatar_room #main-user-list-room #avatar-list li.admin .user-role, #main_avatar_room #main-user-list-room #avatar-list li.admin .username{
+    color:#ff7e00;
+}
+
+/* Res-DJ Colour
+#chat .chat-container .chat-messages .chat-main li.resident-dj .user-role, #chat .chat-container .chat-messages .chat-main li.resident-dj .username, #chat .chat-container .chat-messages .chat-main li.resident-dj span.user-role-icon{
+    color:#44bd32;
+}
+
+#chat .chat-container .chat-messages .chat-main li.res-dj .username:before {
+    content: url(https://cdn.betterttv.net/emote/5b444de56b9160327d12534a/1x.gif);
+    position: relative;
+    top: 3px;
+    padding-right: 4px;
+}
+
+#main_avatar_room #main-user-list-room #avatar-list li.resident-dj .user-role, #main_avatar_room #main-user-list-room #avatar-list li.resident-dj .username, #main_avatar_room #main-user-list-room #avatar-list li.resident-dj span.user-role-icon {
+    color:#44bd32;
+}
+
+#player-controller .left ul li.infoContainer .infoContainerInner .currentDJSong.resident-dj .user-role, #player-controller .left ul li.infoContainer .infoContainerInner .currentDJSong.resident-dj .username, #player-controller .left ul li.infoContainer .infoContainerInner .currentDJSong.resident-dj span.user-role-icon {
+    color:#44bd32;
+}
+*/
+
+#chat .chat-container .chat-messages .chat-main li .activity-row .text p {
+    font-size:initial;
+}
+
+/* Akrill Colour */
+
+#chat .chat-container ul.chat-main li.user-605f8b331eae780006025b48 .stream-item-content .activity-row .username {
+    color:#cb29eb;
+}
+
+
+#chat .chat-container .chat-messages .chat-main li.user-605f8b331eae780006025b48 .username:before {
+    content: url(https://cdn.betterttv.net/emote/5b35cae2f3a33e2b6f0058ef/1x.gif);
+    position: relative;
+    top: 3px;
+    padding-right: 4px;
+}
+
+
+
+#main_avatar_room #main-user-list-room #avatar-list li.userid-605f8b331eae780006025b48 p.username, #main_avatar_room #main-user-list-room #avatar-list li.userid-605f8b331eae780006025b48 span.user-role{
+    color:#cb29eb;
+}
+
+#player-controller .left ul li.infoContainer .infoContainerInner .currentDJSong div.username.WashedupKrill{
+    color:#cb29eb;
+}
+
+/* Panda Badge */
+#chat .chat-container .chat-messages .chat-main li.user-6055a4d53a0c870006161980 .username:before {
+    content: url(https://cdn.betterttv.net/emote/5fd01fc20adab74618594442/1x.gif);
+    position: relative;
+    top: 3px;
+    padding-right: 4px;
+}
+
+/* maus Badge */
+#chat .chat-container .chat-messages .chat-main li.user-605e0960d9700d0007d28da6 .username:before {
+    content: url(https://cdn.betterttv.net/emote/5f1bfeb165fe924464ee7a26/1x.gif);
+    position: relative;
+    top: 3px;
+    padding-right: 4px;
+}
+
+/* Janna Bot Title */
+#main_avatar_room #main-user-list-room #avatar-list li.userid-607d4a6d520719000609c7f9 .dubs:before{
+    color:#69D979;
+    content:"BOT "
+}
+
+/*
+#chat .chat-container .chat-messages .chat-main li.user-607d4a6d520719000609c7f9 .username:before {
+    content: url(https://raw.githubusercontent.com/Asyx3/css/main/bot.png);
+    position: relative;
+    top: 3px;
+    padding-right: 4px;
+    height:28px;
+    width:28px;
+}
+*/
+
+#chat .chat-container ul.chat-main li.user-607d4a6d520719000609c7f9 .stream-item-content .activity-row .username, #chat .chat-container .chat-messages .chat-main li.user-607d4a6d520719000609c7f9 .activity-row .username .user-role, #main_avatar_room #main-user-list-room #avatar-list li.userid-607d4a6d520719000609c7f9 .username {
+    color:#99d5ff;
+}
+
+#main_avatar_room #main-user-list-room #avatar-list li.userid-607d4a6d520719000609c7f9 .user-role, .chat-main li.user-607d4a6d520719000609c7f9 .activity-row .username .user-role {
+    visibility: hidden;
+}
+/*
+#main_avatar_room #main-user-list-room #avatar-list li.userid-607d4a6d520719000609c7f9 .user-role::after {
+    content: "bot";
+    visibility: visible;
+    position: absolute;
+    right:390px;
+    color:#99d5ff;
+}
+*/
+
+.chat-main li.user-607d4a6d520719000609c7f9 .activity-row .username .user-role::after {
+    content: "bot";
+    visibility: visible;
+    position: absolute;
+    right:317px;
+    top:12px;
+    color:#99d5ff;
+    font-size: 100%;
+    font-weight:bold;
+    font-family: Tahoma, sans-serif;
+}
+
+/* "current DJ " text */
+#main_avatar_room #main-user-list-room #avatar-list li.currentDJ .dubs:before{
+    color:#69D979;
+    content:"DJ "
+}
+
+/* Chat Font */
+#chat .chat-container .chat-messages .chat-main li .activity-row .text p, a, body, button, input, select, textarea {
+    font-family: Tahoma, sans-serif;
+}
+
+/* Scrollbar */
+.ps-container .ps-scrollbar-y{
+    background-color:#5A93CC;
+}
+
+.ps-container .ps-scrollbar-y-rail.hover .ps-scrollbar-y, .ps-container .ps-scrollbar-y-rail:hover .ps-scrollbar-y{
+    background-color:#5A93CC;
+}
+
+/* Little number in queue screen */
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .history-item .place, #browser .browser-content .browser-content-main .nano .content-videos #results_video_api .playlist-item .place, #browser .browser-content .browser-content-main .nano .content-videos #results_video_api .queue-item .place, #browser .browser-content .browser-content-main .nano .content-videos #results_video_api .search-item .place{
+    color:#ccc;
+}
+
+/* h2 in Info Tab */
+#room-info-display .room-info-display-wrapper .description h2{
+    color:#5A93CC;
+}
+
+#room-info-display .room-info-display-container .autolink:visited{
+    color:#8e44ad;
+}
+
+#room-info-display .room-info-display-container .autolink, #room-info-display .room-info-display-container .autolink:visited:hover{
+    color:#8c7ae6;
+}
+
+#chat .chat-container .chat-messages .chat-main li .activity-row .text .username-handle{
+    color:rgba(255,0,255,.8);
+}
+
+#chat .chat-container .chat-messages .chat-main li .activity-row .text p a.autolink{
+    font-weight:400;
+}
+
+/* small UI tweaks */
+.playerPreview .song-info .song-info-wrapper .below .add-to-button {
+    color:#5A93CC;
+}
+
+#main_player .player_header span.skip-el:hover{
+    color:#d63031;
+}
+
+.left-menu-toggle .icon-menu:hover{
+    color:#5A93CC;
+}
+
+#player-controller .right ul li .add-to-playlist-button .icon-downvote, #player-controller .right ul li .dubdown .icon-downvote:hover{
+    color:#f0f;
+}
+
+#main-menu-left .close-menu span:hover{
+    color:#FF4060;
+}
+
+#main_player .player_sharing span.icon-facebook:hover{
+    color:#4267B2;
+}
+
+.icon-twitter, #main_player .player_header span.skip-el{
+    transition:color .15s linear;
+}
+
+#main_player .player_sharing span.icon-twitter:hover{
+    color:#00acee;
+}
+
+#main-room .left_section #main_player .player_sharing .videoquality-el.active-hd{
+    text-shadow:0 0 5px #5A93CC;
+}
+#player-controller .right ul li a.dubdown:hover:not(.voted) span, #player-controller .right ul li a.dubdown .icon-arrow-down {
+    color: #FF4060;
+}
+
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .queue-item .actions .img_bg.remove_icon:hover{
+    color: #FF4060;
+}
+
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .browserPlaylistItems.display-mod-controls .room-queue-item .actions .remove_dj:hover{
+    color: #FF4060;
+}
+
+#main_player .play-song-link-container .play-song-link.active-queue-display{
+    transition:color .15s linear;
+}
+#main_player .play-song-link-container .play-song-link.active-queue-display:hover{
+    color:#ee0d33!important;
+}
+
+#browser .browser-content .browser-content-main .nano .content-videos .queue_info .right a.icon-lock.room-queue-lock{
+    color:#FF4060;
+}
+#browser .browser-content .browser-content-main .nano .content-videos .playlist_info .right a.icon-trash.delete-playlist:hover{
+    color:#FF4060;
+}
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .playlist-item .actions .img_bg.remove_icon:hover{
+    color:#FF4060;
+}
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .playlist-item .actions .set_song_to_top_queue:hover{
+    color:#93CC5A;
+}
+
+#mods-controllers .mods-controllers-main-wrapper .mods-controllers-wrapper .mods-controllers-ban-list .user-list li{
+    color:#D63031;
+}
+#mods-controllers .mods-controllers-main-wrapper .mods-controllers-wrapper .mods-controllers-commands-list .chat-command-list li, #mods-controllers .mods-controllers-main-wrapper .mods-controllers-wrapper .mods-controllers-commands-list .chat-command-list li .actions{
+    color:#ddd;
+}
+#mods-controllers .mods-controllers-wrapper .mods-controllers-ban-list.show-controller .user-list li .actions, #mods-controllers .mods-controllers-main-wrapper .mods-controllers-wrapper .mods-controllers-staff-list .user-list li .actions{
+    transition:color .125s linear;
+}
+#mods-controllers .mods-controllers-wrapper .mods-controllers-ban-list.show-controller .user-list li .actions:hover, #mods-controllers .mods-controllers-main-wrapper .mods-controllers-wrapper .mods-controllers-staff-list .user-list li .actions:hover{
+    color:#D63031;
+}
+.playerPreview .song-info .song-info-wrapper .below .add-to-button.done{
+    color:#93CC5A;
+}
+#browser .browser-content .browser-content-main .nano .content-videos .queue_info .right a.text-button{
+    transition:color .15s linear;
+}
+#browser .browser-content .browser-content-main .nano .content-videos .queue_info .right a.text-button:hover{
+    color:#D63031;
+}
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .queue-item .actions .set_song_to_top_queue:hover{
+    color:#5A93CC;
+}
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .browserPlaylistItems.display-mod-controls .room-queue-item .actions .set_song_to_top_queue:hover{
+    color:#5A93CC;
+}
+#main_player .player_header span.active{
+    border-bottom: 2px solid #5A93CC;
+}
+#chat .chat_tools span:after{
+    border: 1px solid #5A93CC;
+}
